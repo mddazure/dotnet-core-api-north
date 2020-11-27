@@ -1,0 +1,7 @@
+https://mddazure@mddapinorth.scm.azurewebsites.net/mddapinorth.git
+http://mddapinorth.azurewebsites.net/swagger/v1/swagger.json
+
+https://mddazure@mddapiweu.scm.azurewebsites.net/mddapiweu.git
+http://mddapiweu.azurewebsites.net/swagger/v1/swagger.json
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api
