@@ -11,11 +11,24 @@ using TodoApi.Models;
 
 namespace TodoApi.Controllers
 {
+    [Route("north/whoami")]
+    public class WhoamiController : Controller
+    {
+    // GET: /Whoami
+        [HttpGet]
+        public async Task<ActionResult<string>> Whoami()
+        {
+            return "north";
+        }
+    }
+
+
     [Route("north/api/[controller]")] 
     [ApiController]
     public class TodoController : Controller
     {
         private readonly TodoContext _context;
+
 
         public TodoController(TodoContext context)
         {
@@ -26,6 +39,8 @@ namespace TodoApi.Controllers
                 _context.TodoItems.Add(new TodoItem { Name = "Item1" });
                 _context.SaveChanges();
             }
+
+            _context.Location = "North";
         }
 
         // GET: api/Todo
@@ -113,5 +128,6 @@ namespace TodoApi.Controllers
         {
             return _context.TodoItems.Any(e => e.Id == id);
         }
+
     }
 }
