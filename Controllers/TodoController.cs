@@ -39,8 +39,6 @@ namespace TodoApi.Controllers
                 _context.TodoItems.Add(new TodoItem { Name = "Item1" });
                 _context.SaveChanges();
             }
-
-            _context.Location = "North";
         }
 
         // GET: api/Todo

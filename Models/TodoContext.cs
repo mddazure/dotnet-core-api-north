@@ -10,7 +10,6 @@ namespace TodoApi.Models
         }
 
         public DbSet<TodoItem> TodoItems { get; set; }
-        public string Location { get; set; }
     }
 
 }
